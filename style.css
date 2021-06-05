@@ -64,7 +64,7 @@ header {
 
 .logo {
   font-family: "Tangerine", cursive;
-  font-size: 72px;
+  font-size: 50px;
   color: #ecdbc9;
 }
 
@@ -97,19 +97,22 @@ header nav ul li a:hover {
 form {
   border: 2px solid #6b1a22;
   padding: 10px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
+.x {
+  display: flex;
+  justify-content: space-between;
+}
 form label {
   font-weight: bold;
-  flex: 1;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
   width: 180px;
-  display: flex;
 }
 
 form button {
@@ -134,15 +137,23 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-@media all and (min-width: 800px) {
+@media all and (min-width: 480px) {
   section,
   h2 {
     padding: 0 10%;
   }
-  .group {
+  header {
+    text-align: left;
+  }
+  #menu {
+    display: flex;
     flex-direction: row;
+    justify-content: flex-end;
   }
   main img {
-    width: 100px;
+    width: 60%;
+  }
+  form {
+    width: 20%;
   }
 }
