@@ -166,12 +166,48 @@ footer p {
     font-size: 60px;
   }
   .smallsize {
-    width: 20%;
+    width: 18%;
     margin-right: 15px;
   }
   .center {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .stacked {
+    display: flex;
+    flex-direction: column;
+  }
+  .smallersize {
+    width: 50%;
+  }
+  .sizeup {
+    max-width: 96%;
+    height: auto;
+    margin: auto;
+  }
+  #about p {
+    font-size: 26px;
+  }
+  #download {
+    font-size: 25px;
+  }
+  #download h2 {
+    font-size: 35px;
+  }
+  .side {
+    display: flex;
+    flex-direction: row;
+  }
+  #img2 {
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+  }
+  #blog p {
+    margin: 25px;
+  }
+  #blog h3 {
+    margin: 25px;
   }
 }
