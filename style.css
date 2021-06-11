@@ -46,12 +46,15 @@ main img {
 .item {
   flex: 1;
   margin: 10px;
-  display: flex;
+  padding: 20px;
 }
 
 .item-double {
-  flex: 2;
+  flex: 3 0 0;
   margin: 10px;
+}
+.smallsize {
+  padding: 5px;
 }
 
 /* -------  Navigation ------- */
@@ -99,11 +102,13 @@ form {
   padding: 10px;
   display: flex;
   flex-direction: column;
+  white-space: nowrap;
 }
 
 .x {
   display: flex;
   justify-content: space-between;
+  /* flex-direction: column; */
 }
 form label {
   font-weight: bold;
@@ -112,9 +117,15 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  max-width: 180px;
+  margin-left: 8px;
 }
 
+button,
+select {
+  text-transform: none;
+  width: 100%;
+}
 form button {
   background-color: #83092e;
   border: none;
@@ -149,7 +160,7 @@ footer p {
     flex-direction: column;
   }
   .change {
-    width: 70%;
+    width: 50%;
   }
   header nav {
     margin-top: 4px;
@@ -167,7 +178,6 @@ footer p {
   }
   .smallsize {
     width: 18%;
-    margin-right: 15px;
   }
   .center {
     display: flex;
@@ -177,6 +187,7 @@ footer p {
   .stacked {
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
   }
   .smallersize {
     width: 50%;
@@ -202,7 +213,6 @@ footer p {
   #img2 {
     max-width: 50%;
     height: auto;
-    margin: auto;
   }
   #blog p {
     margin: 25px;
